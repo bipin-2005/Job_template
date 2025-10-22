@@ -1,0 +1,75 @@
+:root{
+  box-sizing: border-box;
+  background-color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+.parent{
+  background-color: rgb(1, 1, 1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 20px;
+}
+.card{
+  padding: 12px;
+  background-color: rgb(255, 255, 255);
+  width: 280px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.top{
+  display:flex;
+  justify-content: space-between;
+  height: 30px;
+}
+.top img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+.com_info{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.middle{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top:20px;
+}
+.middle span{
+  background-color: rgb(216, 216, 216);
+  border: 0.5px solid black;
+  border-radius: 20px;
+  padding: 4px;
+  font-size: small;
+}
+.time{
+  display: flex;
+  gap: 8px;
+}
+.bottom{
+  margin-top:100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bottom button{
+  width: 100px;
+  height: 30px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(49, 49, 49);
+  border-radius: 10px;
+}
+#company{
+  font-size:large;
+}
+#pos{
+  font-size:large;
+}
