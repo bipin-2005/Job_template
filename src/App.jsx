@@ -107,9 +107,12 @@ const App = () => {
 
   return (
       <div className="parent">
-        {jobOpenings.map(function(e){
-          return <Card logo={e.brandLogo} company={e.companyName} date={e.datePosted} post={e.post} tag1={e.tag1} tag2={e.tag2} pay={e.pay} loc={e.location}/>
-        })}
+        {jobOpenings.map(function(e,id){
+          return <div key={id}>
+            <Card logo={e.brandLogo} company={e.companyName} date={e.datePosted} post={e.post} tag1={e.tag1} tag2={e.tag2} pay={e.pay} loc={e.location}/>
+        </div>
+      })}
+          
       </div>
   );
 }
